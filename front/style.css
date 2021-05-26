@@ -1,0 +1,68 @@
+body{
+    background-color:rgb(207, 227, 235);
+    font-family: 'Montserrat', Arial ;
+    color: rgb(66, 66, 66);
+    margin: 60px 60px 30px 60px;
+}
+.content {
+    background-color: rgb(250, 249, 242);
+    padding: 60px 160px;
+    border-radius: 10px;
+}
+input{
+    font-family: 'Montserrat', Arial ;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    color: rgb(66, 66, 66);
+    padding: 10px 10px;
+    border: 1px solid rgb(148, 148, 148);
+}
+input:focus{
+    border-color: rgb(95, 190, 228);
+    outline: none !important;
+}
+button{
+    border: none;
+    background-color: rgb(207, 227, 235);
+    padding: 10px 20px;
+    font-family: 'Montserrat', Arial ;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.search {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+.search img {
+    width: 250px;
+}
+.response {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin: 30px 0px 10px 0px;
+}
+.response h2 {
+    margin: 60px 0px 0px 0px;
+    font-size: 22px;
+}
+
+@media (max-width: 768px)
+{
+    body{
+       margin: 30px 10px 30px 10px;
+    }
+    .content {
+        padding: 20px 10px;
+    }
+    button {
+        margin-top: 15px;
+    }
+    .search img {
+        margin-top: 30px;
+    }
+}
