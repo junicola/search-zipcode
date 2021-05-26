@@ -1,4 +1,4 @@
-# Consulta CEP
+# Consulta CEP (em desenvolvimento)
 
 Aplicação web para consulta de cep na API ViaCEP.
 
