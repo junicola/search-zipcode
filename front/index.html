@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./assets/loupe.ico" type="image/x-icon"/>
-    <script src="../api/server.js"></script>
+    <link rel="icon" href="./assets/loupe.ico" type="image/x-icon" />
     <title>Pesquisa CEP</title>
 </head>
+
 <body>
     <section class="content">
         <div class="search">
             <div>
-                <h1>Consulte aqui as informações do CEP</h1>
-                <input placeholder="Insira o CEP" class="field" maxlength="8" id="cep" autocomplete="on"/>
-                <button onclick="getCEP()" id="btn-submit">Pesquisar</button>
+                <h1>Consulte as informações do CEP</h1>
+                <input placeholder="Insira o CEP" class="field" maxlength="8" id="cep" autocomplete="on" name="cep" />
+                <button onclick="getCEP()" id="btn-submit" type="submit">Pesquisar</button>
+                <p id="error-message" class="hide">CEP inválido!</p>
             </div>
             <div>
-                <img src="./assets/postman.svg"/>
+                <img src="./assets/postman.svg" />
             </div>
         </div>
         <div class="response">
             <h2>Resultado</h2>
             <label for="">Logradouro</label>
-            <input id="logradouro" readonly />
+            <input id="logradouro" readonly name="logradouro" />
             <label for="">Bairro</label>
-            <input id="bairro" readonly/>
+            <input id="bairro" readonly name="bairro" />
             <label for="">Município</label>
-            <input id="municipio" readonly/>
+            <input id="municipio" readonly name="municipio" />
         </div>
     </section>
+    <section class="footer">
+        <p>
+            Feito por <a href="https://junicola.com" target="_blank">Júlia Nicola</a> - 2021
+        </p> 
+    </section>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
+    <script src="../api/server.js"></script>
 </body>
+
 </html>

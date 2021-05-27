@@ -9,6 +9,9 @@ body{
     padding: 60px 160px;
     border-radius: 10px;
 }
+#cep{
+    color:rgb(66, 66, 66);
+}
 input{
     font-family: 'Montserrat', Arial ;
     background-color: transparent;
@@ -17,18 +20,27 @@ input{
     color: rgb(66, 66, 66);
     padding: 10px 10px;
     border: 1px solid rgb(148, 148, 148);
+    color:rgb(114, 182, 209);
 }
 input:focus{
-    border-color: rgb(95, 190, 228);
+    border-color: rgb(114, 182, 209);
     outline: none !important;
 }
 button{
-    border: none;
-    background-color: rgb(207, 227, 235);
+    border:none;
+    color:white;
+    background-color: rgb(114, 182, 209);
     padding: 10px 20px;
     font-family: 'Montserrat', Arial ;
     border-radius: 5px;
     font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: rgb(82, 153, 182);
+    transition: 0.5s;
+    color: white;
 }
 .search {
     display: flex;
@@ -38,6 +50,13 @@ button{
 }
 .search img {
     width: 250px;
+}
+.show{
+    display: block;
+    color: red;
+}
+.hide{
+    display: none;
 }
 .response {
     display: flex;
@@ -50,6 +69,15 @@ label {
     margin: 60px 0px 0px 0px;
     font-size: 22px;
 }
+.footer {
+    font-size: 14px;
+    text-align: center;
+}
+.footer a {
+    text-decoration: none;
+    color: rgb(49, 138, 173);
+}
+
 
 @media (max-width: 768px)
 {
