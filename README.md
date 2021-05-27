@@ -2,7 +2,7 @@
 
 Aplicação web para consulta de cep na API ViaCEP.
 
-Acesse no navegador o arquivo "index.html" localizado na pasta Front para visualizar a página web e fazer sua consulta. Adicione as configurações do seu banco de dados Firebase em "index.js".
+Acesse no navegador o arquivo "index.html" localizado na pasta Front para visualizar a página web e fazer sua consulta. Adicione as configurações do seu banco de dados Firebase em "server.js".
 
 Requisitos </br>
 [x] consultar cep pela API ViaCEP e preencher os campos;</br>
